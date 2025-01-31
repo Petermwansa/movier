@@ -3,195 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Movier | Home</title>
 </head>
-<body style="background-color: #040000; margin: 5rem">
+<body>
     <header>
-        <nav style="display: grid; grid-template-rows: auto; grid-template-columns: 1fr; justify-items: stretch; align-items: stretch; column-gap: 20px;">
-            <div class="nav__logo" style="grid-column:-3; width: 3rem; ">
-                <img style="width: 10rem; margin-left: 3rem ;margin-top: 4rem; " src="/logo.png" alt="the logo"/>
+        <nav>
+            <div class="nav__logo">
+                <img src="/logo.png" alt="the logo"/>
             </div>
             <div class="links">
-                <ul class="nav__links" style="list-style: none; display: flex; flex-direction: row; justify-content: end; gap: 10rem; margin-right: 1rem; margin-top: 4rem">
-                    <li style="color: #ffff;" class="nav__link"><a href="" style="background-color: transparent; cursor: pointer; border: none; color: #ffff; text-decoration: none;">Home</a></li>
-                    <li style="color: #ffff;" style="color: #ffff;" class="nav__link"><a href="" style="background-color: transparent; cursor: pointer; border: none; color: #ffff; text-decoration: none;">Categories</a></li>
-                    <li style="color: #ffff;" style="color: #ffff;" class="nav__link"><a href="" style="background-color: transparent; cursor: pointer; border: none; color: #ffff; text-decoration: none;">Latest</a></li>
-                    <li style="color: #ffff;" style="color: #ffff;" class="nav__link"><a href="" style="background-color: transparent; cursor: pointer; border: none; color: #ffff; text-decoration: none;">Popular</a></li>
-                    <li style="color: #ffff;" style="color: #ffff;" class="nav__link"><a href="" style="background-color: transparent; cursor: pointer; border: none; color: #ffff; text-decoration: none;">Upcoming</a></li>
+                <ul class="nav__links">
+                    <li class="nav__link"><a href="">Home</a></li>
+                    <li class="nav__link"><a href="">Categories</a></li>
+                    <li class="nav__link"><a href="">Latest</a></li>
+                    <li class="nav__link"><a href="">Popular</a></li>
+                    <li class="nav__link"><a href="">Upcoming</a></li>
                 </ul>
             </div>
         </nav>
-        <div style="display: flex; flex-direction: column; justify-content: center; margin-top: 8%; align-items: center; text-align: center">
-            <img src="/logo.png" alt="the logo of the movier website" />
-            <h2 style="color: #ffff;" style="color: #ffff;">Joy in your eyes</h1>
-            <p style="color: #ffff;" style="color: #ffff;">Experience the world of movies all in one place with the Movier movie streaming platform.</p>
+        <div class="land">
+            <img class="movier" src="/logo.png" alt="the logo of the movier website" />
+            <h2 style="color: #ffff;">Joy in your eyes</h1>
+            <p style="color: #ffff;">Experience the world of movies all in one place with the Movier movie streaming platform.</p>
         </div>
     </header>
     <main>
         <section class="search">
-            <div style="display: flex; flex-direction: row; justify-content: center; margin-top: 2%; align-items: center; text-align: center;">
-                <input style="height: 4rem; width: 40rem; font-size: 1.5rem; padding: 1rem; border-top-left-radius: 1rem; border-bottom-left-radius: 1rem" type="search" id="movie__search" name="movie__search"/>
-                <button style="height: 4rem; width: 5rem; font-size: 1rem; background-color: #FF0000; color: white; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem" >Search</button>
+            <div class="search__div">
+                <input type="search" class="movie__search" id="movie__search" name="movie__search"/>
+                <button class="button__search">Search</button>
             </div>
         </section>
-        <section class="category" style="margin-top: 6rem;">
-            <h1 style="color: #ffff; " style="color: #ffff;">Categories</h1>
-            <ul style="list-style: none; display: flex; flex-direction: row; justify-content: center; gap: 6rem; ">
-                <li style="color: #ffff; background-color: #FF0000; padding: 1rem; border-radius: 1rem;"><a style="background-color: transparent; cursor: pointer; border: none; color: #ffff">Action</a></li>
-                <li style="color: #ffff; background-color: #FF0000; padding: 1rem; border-radius: 1rem;"><a style="background-color: transparent; cursor: pointer; border: none; color: #ffff">Thriller</a></li>
-                <li style="color: #ffff; background-color: #FF0000; padding: 1rem; border-radius: 1rem;"><a style="background-color: transparent; cursor: pointer; border: none; color: #ffff">Comedy</a></li>
-                <li style="color: #ffff; background-color: #FF0000; padding: 1rem; border-radius: 1rem;"><a style="background-color: transparent; cursor: pointer; border: none; color: #ffff">Drama</a></li>
-                <li style="color: #ffff;  background-color: #FF0000; padding: 1rem; border-radius: 1rem;"><a style="background-color: transparent; cursor: pointer; border: none; color: #ffff">Horror</a></li>
-                <li style="color: #ffff; background-color: #FF0000; padding: 1rem; border-radius: 1rem;"><a style="background-color: transparent; cursor: pointer; border: none; color: #ffff">Fantasy</a></li>
-                <li style="color: #ffff; background-color: #FF0000; padding: 1rem; border-radius: 1rem;"><a style="background-color: transparent; cursor: pointer; border: none; color: #ffff">Fiction</a></li>
+        <section class="category">
+            <h1>Categories</h1>
+            <ul>
+                <li class="cat__list"><a class="list__list">Action</a></li>
+                <li class="cat__list"><a class="list__list">Thriller</a></li>
+                <li class="cat__list"><a class="list__list">Comedy</a></li>
+                <li class="cat__list"><a class="list__list">Drama</a></li>
+                <li class="cat__list"><a class="list__list">Horror</a></li>
+                <li class="cat__list"><a class="list__list">Fantasy</a></li>
+                <li class="cat__list"><a class="list__list">Fiction</a></li>
             </ul>
         </section>
-        <section class="top__rating"  style="margin-top: 6rem;">
-            <h1 style="color: #ffff;">Top Movies</h1>
-            <div class="movie__cards" style="display: grid; grid-template-columns: auto auto auto auto; gap: 3rem">
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <section class="top__rating">
+            <h1>Top Movies</h1>
+            <div class="movie__cards">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Inception</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Inception</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card" >
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Inception</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title" >Inception</h3>
+                    <p  class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >The God Father</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">The God Father</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Titanic</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Titanic</h3>
+                    <p  class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Inception</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Inception</h3>
+                    <p  class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Inception</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Inception</h3>
+                    <p  class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >The God Father</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">The God Father</h3>
+                    <p  class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Titanic</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Titanic</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
             </div>
         </section>
-        <hr style="width: 50%; margin-top: 4rem; margin-bottom: 8rem">
+        <hr>
 
-        <section class="top__rating"  style="margin-top: 6rem;">
+        <section class="top__rating">
             <h1 style="color: #ffff;">Latest Movies</h1>
-            <div class="movie__cards" style="display: grid; grid-template-columns: auto auto auto auto; gap: 3rem">
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <div class="movie__cards">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Dune: part Two</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Dune: part Two</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Titanic</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Titanic</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Venom 3</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Venom 3</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
 
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Challengers</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Challengers</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
             </div>
         </section>
-        <hr style="width: 50%; margin-top: 4rem; margin-bottom: 8rem">
+        <hr>
 
-        <section class="top__rating"  style="margin-top: 6rem;">
+        <section class="top__rating">
             <h1 style="color: #ffff;">Popular Movies</h1>
-            <div class="movie__cards" style="display: grid; grid-template-columns: auto auto auto auto; gap: 3rem">
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <div class="movie__cards">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Dune: part Two</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Dune: part Two</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Titanic</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Titanic</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Spiderman Homecoming</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Spiderman Homecoming</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Challengers</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Challengers</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
             </div>
         </section>
-        <hr style="width: 50%; margin-top: 4rem; margin-bottom: 8rem">
+        <hr>
 
 
 
-        <section class="top__rating"  style="margin-top: 6rem;">
+        <section class="top__rating" >
             <h1 style="color: #ffff;">Coming Soon</h1>
-            <div class="movie__cards" style="display: grid; grid-template-columns: auto auto auto; gap: 3rem;">
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <div class="movie__cards">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Sonic 4</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">Sonic 4</h3>
+                    <p  class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >The Wild Robot</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3 class="movie__title">The Wild Robot</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
 
-                <article class="movie__card" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 style="color: #ffff; font-size: 1.5rem" >Heretic</h3>
-                    <p style="color: yellow; margin-top: -1rem">9/10</p>
+                    <h3  class="movie__title">Heretic</h3>
+                    <p class="movie__rating">9/10</p>
                 </article>
             </div>
         </section>
-        <hr style="width: 50%; margin-top: 4rem; margin-bottom: 8rem">
+        <hr>
     </main>
 
-    <footer style="margin-top: 8rem; margin-bottom: 4rem">
-        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center">
-            <img style="width: 10rem;" src="/logo.png">
-            <p style="color: #ffff;" style="color: #ffff;">Disclaimer: All the content on this website are provided by third party hosts.</p>
+    <footer class="footer">
+        <div>
+            <img src="/logo.png">
+            <p>Disclaimer: All the content on this website are provided by third party hosts.</p>
         </div>
     </footer>
 
