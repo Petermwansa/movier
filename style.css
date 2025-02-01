@@ -1,48 +1,91 @@
+* {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #040000; 
+}
+
+
+nav {
+    background: #f5f3f3;
+    position : relative;
+    height: 80px;
+    width: 100%;
+}
+
+nav .checkbtn {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: black;
+    right: 1%;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+nav input {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+label > img{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 10rem;
+}
+
+nav ul {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-70%);
+    transform: translateY(-70%);
+    float: right;
+    right: 10%;
+    transition: all .8s;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    gap: 10px;
+}
+
+nav ul li a { 
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+a.active, a:hover {
+    color: #FF0000;
+    transition: .5s;
+}
+
+
+
+main {
     margin: 5rem
-}
-
-
-header nav {
-    display: grid; 
-    grid-template-rows: auto; 
-    grid-template-columns: 1fr; 
-    justify-items: stretch; 
-    align-items: stretch; 
-    column-gap: 20px;
-}
-
-header nav .nav__logo {
-    grid-column:-3; width: 3rem; 
-}
-
-header nav .nav__logo img {
-    width: 10rem; 
-    margin-left: 3rem ;
-    margin-top: 4rem; 
-}
-
-header nav .links ul {
-    list-style: none; 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: end; 
-    gap: 10rem; 
-    margin-right: 1rem; 
-    margin-top: 4rem;
-}
-
-header nav .links ul li {
-    color: #ffff;
-}
-
-header nav .links ul li a {
-    background-color: transparent; 
-    cursor: pointer; 
-    border: none; 
-    color: #ffff; 
-    text-decoration: none;
 }
 
 header .land {
@@ -211,30 +254,50 @@ footer > div > p {
 
 
 
-@media(max-width: 820px) {
-    nav {
+@media(max-width: 952px) {
+    label > img{
+        width: 8rem;
+    }
+    nav ul li a {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0 8px;
+    }
+}
+
+
+@media(max-width: 858px) {
+    label > img{
+        width: 6rem;
+    }
+
+    nav .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        background: #040000;
+        width: 100%;
+        top: 700px;
+        height: 100vh;
+        text-align: center;
+        color: white;
+        right: 0%;
 
     }
 
-    .nav__logo {
-        width: 5rem; 
-        margin-left: 1rem ;
-        margin-top: 2rem; 
+    nav ul li {
+        display: block;
+        color: white;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        color: white;
+    }
+    #check:checked ~ ul {
+        left: -100%;
     }
 
-    .land img {
-        width: 15rem;
-    }
-    .land h2 {
-        font-size: 1.5rem;
-    }
-
-    .movie__search{
-        height: 2rem; 
-        width: 20rem; 
-        font-size: 0.5rem; 
-        padding: 1rem; 
-        border-top-left-radius: 1rem; 
-        border-bottom-left-radius: 1rem
-    }
-  }
+}
