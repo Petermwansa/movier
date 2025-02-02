@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <title>Movier | Home</title>
+    <script src="/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,6 +24,9 @@
                 <li><a href="#">Upcoming</a></li>
             </ul>
         </nav>
+        <button><i class="fa-regular fa-sun" id="toggleTheme"></i></button>
+        <!-- <button><i class="fa-regular fa-moon"></i></button> -->
+
         <!-- <nav>
             <div class="nav__logo">
                 <img src="/logo.png" alt="the logo"/>
@@ -194,6 +198,7 @@
                     <p class="movie__rating">9/10</p>
                 </article>
 
+
                 <article class="movie__card">
                     <img src="/download.jpeg" alt="a movie poster"/>
                     <h3  class="movie__title">Heretic</h3>
@@ -211,6 +216,13 @@
         </div>
     </footer>
 
+
+    <script>
+        function colorChange() {
+            document.body.style.background="white";
+            document.querySelectorAll('h1').forEach(e => e.style.color="black");
+        }
+    </script>
     <script src="https://kit.fontawesome.com/3ab7ab220a.js" crossorigin="anonymous"></script>
 
 </body>

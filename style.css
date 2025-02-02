@@ -11,6 +11,13 @@ body {
     overflow-x: hidden;
 }
 
+#toggleTheme {
+    font-size: 2rem;
+    color: white;
+    position: fixed;
+    right: 2%;
+    margin-top: 1%;
+}
 
 nav {
     background: #f5f3f3;
