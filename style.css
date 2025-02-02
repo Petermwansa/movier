@@ -8,6 +8,7 @@
 
 body {
     background-color: #040000; 
+    overflow-x: hidden;
 }
 
 
@@ -130,7 +131,7 @@ header .land p {
 
 .search__div .button__search {
     height: 4rem; 
-    width: 5rem; 
+    width: 6rem; 
     font-size: 1rem; 
     background-color: #FF0000; 
     color: white; 
@@ -144,13 +145,13 @@ header .land p {
 
 .category > h1 {
     color: #ffff;
+    margin-bottom: 3rem;
 }
 .category > ul {
     list-style: none; 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center; 
-    gap: 6rem; 
+    display: grid; 
+    grid-template-columns: auto auto auto auto auto auto; 
+    gap: 3rem
 }
 
 .category > ul > .cat__list {
@@ -167,18 +168,26 @@ header .land p {
     color: white
 }
 
+.list__list {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
 .top__rating {
     margin-top: 6rem;
 }
 
 .top__rating h1 {
     color: #ffff;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 .top__rating > .movie__cards {
     display: grid; 
     grid-template-columns: auto auto auto auto; 
-    gap: 3rem
+    gap: 2rem
 }
 
 .top__rating > .movie__cards > .movie__card {
@@ -186,6 +195,14 @@ header .land p {
     justify-content: center; 
     flex-direction: column; 
     align-items: center;
+    text-align: center;
+
+}
+
+.top__rating > .movie__cards > .movie__card > img {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
 }
 
 
@@ -249,12 +266,24 @@ footer > div > p {
 
 
 
+@media(max-width: 1080px) {
+    .top__rating > .movie__cards {
+        display: grid; 
+        grid-template-columns: auto auto auto; 
+        gap: 2rem
+    }
+
+    .top__rating > .movie__cards > .movie__card > img {
+        height: 130px;
+        width: 180px;
+        object-fit: cover;
+    }
+}
 
 
 
 
-
-@media(max-width: 952px) {
+@media(max-width: 980px) {
     label > img{
         width: 8rem;
     }
@@ -263,10 +292,91 @@ footer > div > p {
         text-transform: uppercase;
         padding: 0 8px;
     }
+
+    header .land img {
+        width: 20rem;
+    }
+    header .land h2 {
+        font-size: 1.5rem;
+        color: white;
+    }
+    header .land p {
+        font-size: .8rem;
+        color: white;
+    
+    }
+
+
+    .search__div {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        margin-top: 1%; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .search__div .movie__search {
+        height: 3.5rem; 
+        width: 30rem; 
+        font-size: 1.2rem; 
+        padding: 1rem; 
+        border-top-left-radius: 1rem; 
+        border-bottom-left-radius: 1rem
+    }
+
+    .search__div .button__search {
+        height: 3.5rem; 
+        width: 6rem; 
+        font-size: .8rem; 
+        padding: 1rem;
+        background-color: #FF0000; 
+        color: white; 
+        border-top-right-radius: 1rem; 
+        border-bottom-right-radius: 1rem
+    }
+
+    .category > ul {
+        list-style: none; 
+        display: grid; 
+        grid-template-columns: auto auto auto auto ; 
+        gap: 2rem
+    }
+    
+    .category > ul > .cat__list {
+        color: #ffff; 
+        background-color: #FF0000; 
+        padding: .7rem; 
+        border-radius: 1rem;
+    }
+
+    .top__rating > .movie__cards {
+        display: grid; 
+        grid-template-columns: auto auto auto; 
+        gap: 2rem
+    }
+
+    .top__rating > .movie__cards > .movie__card > img {
+        height: 110px;
+        width: 160px;
+        object-fit: cover;
+    }
+
+
+    .top__rating > .movie__cards > .movie__card > .movie__title {
+        color: #ffff;
+        font-size: 1rem;  
+    }
+    
+    .top__rating > .movie__cards > .movie__card > .movie__rating {
+        color: yellow; 
+        margin-top: -1rem;
+        font-size: .8;
+    }
 }
 
 
-@media(max-width: 858px) {
+@media(max-width: 760px) {
     label > img{
         width: 6rem;
     }
@@ -298,6 +408,33 @@ footer > div > p {
     }
     #check:checked ~ ul {
         left: -100%;
+    }
+
+    .category > ul {
+        list-style: none; 
+        display: grid; 
+        grid-template-columns: auto auto auto ; 
+        gap: 1.5rem
+    }
+    
+    .category > ul > .cat__list {
+        color: #ffff; 
+        background-color: #FF0000; 
+        padding: .6rem; 
+        border-radius: 1rem;
+    }
+
+
+    .top__rating > .movie__cards {
+        display: grid; 
+        grid-template-columns: auto auto; 
+        gap: 2rem
+    }
+
+    .top__rating > .movie__cards > .movie__card > img {
+        height: 110px;
+        width: 160px;
+        object-fit: cover;
     }
 
 }

@@ -10,3 +10,8 @@ I used Figma tp design the logo. Not the best design I am not a designer yet but
 
 # ================= STEP 2 ==================
 The second part of the project involved workeing with css inline styling within the html file;
+
+
+# ================= STEP 3 ==================
+Do the responsive design for the website to be responsive on all screen sizes.
+I used the css grid to make the components suit each screen size and I used the media queries to achieve the responsives of the website.
