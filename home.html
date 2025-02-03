@@ -9,14 +9,13 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navigation">
             <input type="checkbox" id="check" >
             <label for="check" class="checkbtn">
                 <i class="fa-solid fa-bars"></i>
-                <!-- <i class="fa-solid fa-x"></i> -->
             </label>
             <label class="logo"><img src="/logo.png" /></label>
-            <ul>
+            <ul id="nav_item">
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Latest</a></li>
@@ -216,13 +215,6 @@
         </div>
     </footer>
 
-
-    <script>
-        function colorChange() {
-            document.body.style.background="white";
-            document.querySelectorAll('h1').forEach(e => e.style.color="black");
-        }
-    </script>
     <script src="https://kit.fontawesome.com/3ab7ab220a.js" crossorigin="anonymous"></script>
 
 </body>

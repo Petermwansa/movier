@@ -17,3 +17,8 @@ The second part of the project involved workeing with css inline styling within 
 # ================= STEP 3 ==================
 Do the responsive design for the website to be responsive on all screen sizes.
 I used the css grid to make the components suit each screen size and I used the media queries to achieve the responsives of the website.
+
+
+# ================= STEP 4 ==================
+Add the theme toggle using javascript in a seperate Javascript file.
+This will toggle the theme while clicking on the sun or moon element in the right top corner of the website.

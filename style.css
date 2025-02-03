@@ -14,7 +14,7 @@ body {
 #toggleTheme {
     font-size: 2rem;
     color: white;
-    position: fixed;
+    position: absolute;
     right: 2%;
     margin-top: 1%;
 }
@@ -219,7 +219,7 @@ header .land p {
 }
 
 .top__rating > .movie__cards > .movie__card > .movie__rating {
-    color: yellow; 
+    color: white; 
     margin-top: -1rem;
 }
 
