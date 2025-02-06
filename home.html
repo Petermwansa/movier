@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <title>Movier | Home</title>
-    <script src="/script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,8 +17,7 @@
             <label class="logo"><img src="/logo.png" /></label>
             <ul id="nav_item">
                 <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Latest</a></li>
+                <li><a href="#">Genres</a></li>
                 <li><a href="#">Popular</a></li>
                 <li><a href="#">Upcoming</a></li>
             </ul>
@@ -40,169 +39,51 @@
                 </ul>
             </div>
         </nav> -->
-        <div class="land">
+        <div class="land"> 
             <img class="movier" src="/logo.png" alt="the logo of the movier website" />
-            <h2 style="color: #ffff;">Joy in your eyes</h1>
-            <p style="color: #ffff;">Experience the world of movies all in one place with the Movier movie streaming platform.</p>
+            <h2 style="color: #ffff;">Your Movies Encyclopedia</h1>
+            <p style="color: #ffff;">Get to the information you need about your favourite movies and discover interesting upcoming movies</p>
         </div>
     </header>
     <main>
         <section class="search">
             <div class="search__div">
-                <input type="search" class="movie__search" id="movie__search" name="movie__search"/>
-                <button class="button__search">Search</button>
+                <form action="">
+                    <input type="search" class="movie__search" id="movie__search" placeholder="Search the for a TV show or movie here..." name="movie__search"/>
+                    <button class="button__search">Search</button>
+                </form>
             </div>
         </section>
         <section class="category">
-            <h1>Categories</h1>
-            <ul>
-                <li class="cat__list"><a class="list__list">Action</a></li>
-                <li class="cat__list"><a class="list__list">Thriller</a></li>
-                <li class="cat__list"><a class="list__list">Comedy</a></li>
-                <li class="cat__list"><a class="list__list">Drama</a></li>
-                <li class="cat__list"><a class="list__list">Horror</a></li>
-                <li class="cat__list"><a class="list__list">Fiction</a></li>
-            </ul>
+            <h1>All Genres on IMDb</h1>
+            <!-- <button id="genres">Show genres</button> -->
+            <ul id="genre__list"></ul> <!-- Empty list to be filled dynamically -->
         </section>
 
         <section class="top__rating">
-            <h1>Top Movies</h1>
+            <!-- this h1 below will be filled in dynamically with the search term entered  -->
+            <h1 id="search__term"></h1>
             <div class="movie__cards">
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Inception</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
+                <ul class="movies">
+                </ul>
+            </div>
+        </section>
+        <!-- this divider will be shown dynamically depending on whether theres is a query sent to search for movies  -->
+        <hr id="search__divider" class="hide">
 
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Inception</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
 
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">The God Father</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Titanic</h3>
-                    <p  class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Inception</h3>
-                    <p  class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Inception</h3>
-                    <p  class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">The God Father</h3>
-                    <p  class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Titanic</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
+        <section class="popular">
+            <h1 style="color: #ffff;">You can also check out IMDb's Most Popular Movies</h1>
+            <div class="movie__cards__popular">
+                <ul id="popular__list"></ul>
             </div>
         </section>
         <hr>
-
-        <section class="top__rating">
-            <h1 style="color: #ffff;">Latest Movies</h1>
-            <div class="movie__cards">
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Dune: part Two</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Titanic</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Venom 3</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Challengers</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-            </div>
-        </section>
-        <hr>
-
-        <section class="top__rating">
-            <h1 style="color: #ffff;">Popular Movies</h1>
-            <div class="movie__cards">
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Dune: part Two</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Titanic</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Spiderman Homecoming</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Challengers</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-            </div>
-        </section>
-        <hr>
-
-
-
-        <section class="top__rating" >
-            <h1 style="color: #ffff;">Coming Soon</h1>
-            <div class="movie__cards">
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">Sonic 4</h3>
-                    <p  class="movie__rating">9/10</p>
-                </article>
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3 class="movie__title">The Wild Robot</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
-
-
-                <article class="movie__card">
-                    <img src="/download.jpeg" alt="a movie poster"/>
-                    <h3  class="movie__title">Heretic</h3>
-                    <p class="movie__rating">9/10</p>
-                </article>
+        <section class="upcoming" >
+            <h1 style="color: #ffff;">Upcoming Movies in the US</h1>
+            <div class="movie__cards__upcoming">
+                <ul class="upcoming__movies">
+                </ul>
             </div>
         </section>
         <hr>

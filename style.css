@@ -207,11 +207,10 @@ header .land p {
 }
 
 .top__rating > .movie__cards > .movie__card > img {
-    height: 150px;
     width: 200px;
+    height: 100%;
     object-fit: cover;
 }
-
 
 .top__rating > .movie__cards > .movie__card > .movie__title {
    color: #ffff;
@@ -221,6 +220,113 @@ header .land p {
 .top__rating > .movie__cards > .movie__card > .movie__rating {
     color: white; 
     margin-top: -1rem;
+}
+
+
+
+.popular > h1 {
+    margin-bottom: 5rem;
+}
+
+.popular > .movie__cards__popular {
+    display: grid; 
+    grid-template-columns: auto auto auto auto; 
+    gap: 2rem
+}
+
+.popular > .movie__cards__popular > .movie__card__popular {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+
+}
+
+.popular > .movie__cards__popular > .movie__card__popular > img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular > .movie__cards__popular > .movie__card__popular > .movie__title {
+   color: #ffff;
+   font-size: 1.5rem;  
+}
+
+.popular > .movie__cards__popular > .movie__card__popular > .movie__rating {
+    color: yellow; 
+    margin-top: -1rem;
+}
+
+.popular > .movie__cards__popular > .movie__card__popular > .link {
+    color: yellow;
+    cursor: pointer;
+}
+
+
+
+
+
+.upcoming > h1 {
+    margin-bottom: 5rem;
+}
+
+.upcoming > .movie__cards__upcoming {
+    display: grid; 
+    grid-template-columns: auto auto auto auto; 
+    gap: 2rem
+}
+
+.upcoming > .movie__cards__upcoming > .movie__card__upcoming {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+
+}
+
+.upcoming > .movie__cards__upcoming > .movie__card__upcoming > img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upcoming > .movie__cards__upcoming > .movie__card__upcoming > .movie__title {
+   color: #ffff;
+   font-size: 1.5rem;  
+}
+
+.upcoming > .movie__cards__upcoming > .movie__card__upcoming > .movie__date {
+    color: yellow; 
+    margin-top: -1rem;
+}
+
+.upcoming > .movie__cards__upcoming > .movie__card__upcoming > .link {
+    color: yellow;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#search__divider{
+    visibility: hidden;
+}
+.hide {
+    visibility: hidden;
+}
+.unhide {
+    visibility: visible;
 }
 
 hr {
