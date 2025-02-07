@@ -43,6 +43,7 @@ async function imdbApi (query) {
             const movie = `<article class="movie__card"><img src="${poster}" /><h3 class="movie__title">${name}</h3></article>`;
     
             document.querySelector('.movie__cards').innerHTML += movie;
+            document.querySelector('movie__popular');
         })
     })
     .catch(err => {
