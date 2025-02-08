@@ -1,6 +1,3 @@
-
-
-
 // for the api 
 const form = document.querySelector('form');
 const container = document.querySelector('.movies');
@@ -172,22 +169,6 @@ async function upcomingUs () {
             document.querySelector('.movie__cards__upcoming').innerHTML += upcomingMovie;
         })
 
-        // const movieContainer = document.querySelector('.upcoming__movies'); // Target the container
-
-        // movies.forEach(movie => {
-        //     const movieElement = document.createElement('div');
-        //     movieElement.classList.add('movie-card'); // Add a CSS class
-        //     movieElement.innerHTML = `
-        //         <img src="${movie.primaryImage}" alt="${movie.primaryTitle} Poster" class="movie-poster">
-        //         <h3>${movie.primaryTitle}</h3>
-        //         <p>Release Date: ${movie.releaseDate}</p>
-        //         <a href="${movie.url}" target="_blank">View on IMDb</a>
-        //     `;
-        //     movieContainer.appendChild(movieElement);
-        // });
-
-        // //console.log(result); 
-
     } catch (error) {
         console.error(error);
     }
@@ -222,4 +203,79 @@ toggle.addEventListener('click', function() {
     }
 })
 
+
+
+
+// the code below is for the form validation 
+
+const formText = document.getElementById('form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const textMessage = document.getElementById("message");
+const noText = document.getElementById("noText");
+
+
+formText.addEventListener('submit', e => {
+    e.preventDefault();
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+
+
+// here we are checking the email format using this reqular expression  
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+
+// This function will be called when the form will be submitted to validate the inputs on the client side 
+const validateInputs = () => {
+    const nameValue = name.value.trim();
+    const emailValue = email.value.trim();
+    const messageValue = textMessage.value.trim();
+
+    // we validate the entered name
+    if(nameValue === '') {
+        setError(name, 'Name is required');
+    } else {
+        setSuccess(name);
+    }
+
+    // we validate the entered email
+    if(emailValue === '') {
+        setError(email, 'Email is required');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email address');
+    } else {
+        setSuccess(email);
+    }
+
+    // we validate the entered entered message
+    if (messageValue === '') {
+        noText.style.display = "block";
+        textMessage.style.border = "2px solid red";
+    } else {
+        noText.style.display = "none"; 
+        textMessage.style.border = "2px solid green";
+    }
+};
 

@@ -266,8 +266,6 @@ header .land p {
 
 
 
-
-
 .upcoming > h1 {
     margin-bottom: 5rem;
 }
@@ -338,6 +336,129 @@ hr {
 
 
 
+/* the styling for the form  */
+#form {
+    width: 80%;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: #f5f3f3;
+    border-radius: 1rem;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.form__heading {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#form p {
+    font-size: 1rem;
+    color: #0f2027;
+}
+
+
+
+#form button {
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 10%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 1rem;
+}
+
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+.input-control label {
+    margin-bottom: .5rem;
+}
+.input-control input {
+    border: 2px solid #ffffff;
+	border-radius: 1rem;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 70%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.textMessage {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.input-control textarea {
+    border: 20px solid red;
+    padding: 20px;
+    border-radius: 1rem;
+    border: none;
+    width: 70%;
+}
+
+.input-control textarea {
+    
+}
+
+.input-control textarea:focus {
+    outline: 0;
+}
+
+#message__label {
+    margin-bottom: .5rem;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control.success textarea {
+    border-color: #09c372;
+}
+
+.input-control.error textarea {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: .8rem;
+    font-weight: 100;
+    height: 2rem;
+}
+
+form h4 {
+    color: #FF0000;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+#noText {
+    display: none;
+}
+
+
 
 
 
@@ -360,7 +481,8 @@ footer > div {
     display: flex; 
     justify-content: center; 
     flex-direction: column; 
-    align-items: center
+    align-items: center;
+    text-align: center;
 }
 
 footer > div > img {
@@ -371,6 +493,12 @@ footer > div > p {
     color: white;
     font-size: 1rem;
 }
+
+
+
+
+
+
 
 
 
@@ -486,6 +614,7 @@ footer > div > p {
         margin-top: -1rem;
         font-size: .8;
     }
+
 }
 
 
@@ -548,6 +677,10 @@ footer > div > p {
         height: 110px;
         width: 160px;
         object-fit: cover;
+    }
+
+    #form button {
+        width: 100%;
     }
 
 }

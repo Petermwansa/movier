@@ -23,3 +23,7 @@ This will toggle the theme while clicking on the sun or moon element in the righ
 # ================= STEP 5 ==================
 I added and integrated the IMDb api to the website I would have hidden the api keys but the requirements of the task do not talk about that. The api is free so I kept if like that it will have no extra charges. But in my main app which I am developing using the same concept and using react I will hide it.
 
+
+# ================= STEP 6 ==================
+In step 6 I implemented the JavaScript validation to the form that I added to the website and styled using CSS.
+
