@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     background-color: #040000; 
@@ -17,6 +21,14 @@ body {
     position: absolute;
     right: 2%;
     margin-top: 1%;
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+p {
+    font-weight: 100;
 }
 
 nav {
@@ -63,7 +75,7 @@ label > img{
 
 nav ul {
     position: absolute;
-    top: 50%;
+    top: 75%;
     -ms-transform: translateY(-70%);
     transform: translateY(-70%);
     float: right;
@@ -79,6 +91,7 @@ nav ul li {
 }
 
 nav ul li a { 
+    text-decoration: none;
     color: black;
     font-size: 17px;
     text-transform: uppercase;
@@ -462,12 +475,48 @@ form h4 {
 
 
 
+/* the recommendations carousel  */
+
+#recomendations {
+    margin: 5rem 20%;
+    border-radius: 2rem;
+}
 
 
+#recomendations img {
+    border-radius: 2rem;
+    width: 300px;
+    height: 800px;
+    object-fit: fill;
+}
 
+.reco {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 2rem 2rem 2rem;
+}
+.reco p {
+    color: white;
 
-
-
+}
+.recomendationh1 {
+    color: white;
+    text-align: center;
+}
+.btn {
+    color: white;
+    border: 2px solid yellow;
+}
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+.slide__title {
+    font-size: 4rem;
+}
 
 
 

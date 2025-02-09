@@ -27,3 +27,7 @@ I added and integrated the IMDb api to the website I would have hidden the api k
 # ================= STEP 6 ==================
 In step 6 I implemented the JavaScript validation to the form that I added to the website and styled using CSS.
 
+
+# ================= STEP 7 ==================
+Utilize bootstrap in the project by adding a carousel to display some recomendations of the moviesfrom the director.
+
