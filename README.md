@@ -31,3 +31,8 @@ In step 6 I implemented the JavaScript validation to the form that I added to th
 # ================= STEP 7 ==================
 Utilize bootstrap in the project by adding a carousel to display some recomendations of the moviesfrom the director.
 
+
+# ================= STEP 8 ==================
+In the last and final step, I added a CSS preprosessor. In this project I addedd SASS to process the CSS but.
+But more work will be done by creating variable for a more efficient work flow and easier updates
+

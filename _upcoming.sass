@@ -1,0 +1,33 @@
+
+.upcoming
+    > h1
+        margin-bottom: 5rem
+
+    > .movie__cards__upcoming
+        display: grid
+        grid-template-columns: auto auto auto auto
+        gap: 2rem
+
+        > .movie__card__upcoming
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+            text-align: center
+
+            > img
+                width: 200px
+                height: 100%
+                object-fit: cover
+
+            > .movie__title
+                color: #ffff
+                font-size: 1.5rem
+
+            > .movie__date
+                color: yellow
+                margin-top: -1rem
+
+            > .link
+                color: yellow
+                cursor: pointer

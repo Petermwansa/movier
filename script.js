@@ -92,15 +92,9 @@ async function getGenres() {
 getGenres();
 
 
-
-// get the popular movies 
-
-
 // get the popular movies 
 
 async function getPopularMovies () {
-    // document.getElementById('search__divider').style.visibility = "hidden";
-
     const url = 'https://imdb236.p.rapidapi.com/imdb/most-popular-movies';
     const options = {
         method: 'GET',
@@ -112,7 +106,7 @@ async function getPopularMovies () {
     try {
         const response = await fetch(url, options);
         const result = await response.json(); // Parse JSON response
-        console.log("Popular format", result[20]); // Check API response format
+        console.log("Popular format", result[20]); // here we use this line for testing to check API response format
 
 
         result.map((item) => {
@@ -140,7 +134,7 @@ getPopularMovies();
 
 
 
-
+// We are searching for the upcoming movies in the us 
 async function upcomingUs () {
 
     const url = 'https://imdb236.p.rapidapi.com/imdb/upcoming-releases?countryCode=US&type=MOVIE';
@@ -176,8 +170,6 @@ async function upcomingUs () {
 
 }
 upcomingUs();
-
-
 
 
 

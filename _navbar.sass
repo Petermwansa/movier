@@ -1,0 +1,62 @@
+nav
+    background: #f5f3f3
+    position: relative
+    height: 80px
+    width: 100%
+
+    .checkbtn
+        position: absolute
+        top: 50%
+        -ms-transform: translateY(-50%)
+        transform: translateY(-50%)
+        font-size: 30px
+        color: black
+        right: 1%
+        line-height: 80px
+        margin-right: 40px
+        cursor: pointer
+        display: none
+
+#check
+    display: none
+
+nav input
+    position: absolute
+    top: 50%
+    left: 0
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+
+label > img
+    position: absolute
+    top: 50%
+    left: 5%
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    width: 10rem
+
+nav ul
+    position: absolute
+    top: 75%
+    -ms-transform: translateY(-70%)
+    transform: translateY(-70%)
+    float: right
+    right: 10%
+    transition: all .8s
+
+    li
+        display: inline-block
+        line-height: 80px
+        margin: 0 5px
+        gap: 10px
+
+        a
+            text-decoration: none
+            color: black
+            font-size: 17px
+            text-transform: uppercase
+            padding: 0 10px
+
+a.active, a:hover
+    color: #FF0000
+    transition: .5s
