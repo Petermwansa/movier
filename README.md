@@ -36,3 +36,4 @@ Utilize bootstrap in the project by adding a carousel to display some recomendat
 In the last and final step, I added a CSS preprosessor. In this project I addedd SASS to process the CSS but.
 But more work will be done by creating variable for a more efficient work flow and easier updates
 
+The next steps will come later.
